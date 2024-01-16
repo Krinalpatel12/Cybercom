@@ -1,0 +1,13 @@
+.container{
+    display:flex
+}
+.div1{
+    color: brown;
+}
+figcaption{
+    text-align: center;
+}
+img{
+    height: 315px;
+    width: 215px;
+}
