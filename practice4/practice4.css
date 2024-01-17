@@ -1,0 +1,24 @@
+thead{
+    background-color: rgb(132, 177, 132);
+    text-align: left;
+}
+.row{
+    background-color: rgb(126, 157, 157);
+    text-align:left;
+    margin-top: auto;
+    vertical-align: top;
+}
+.div{
+    background-color: rgb(218, 121, 86);
+    vertical-align: top;
+}
+.api{
+    background-color: rgb(216, 219, 47);
+    vertical-align: top;
+}
+.dul{
+    text-align: left;
+}
+.ulv{
+    text-align: left;
+}
