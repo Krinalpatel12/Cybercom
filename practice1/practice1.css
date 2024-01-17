@@ -8,7 +8,7 @@
   justify-content: center;
   text-align: center;
   padding-top: 2px;
-  margin: 10px;
+  margin: 16px;
 }
 .center{
   position: relative;
@@ -22,5 +22,6 @@
 .text{
   width: 66%;
   text-align: center;
-  margin-left: 240px;
+  margin-left: 255px;
+  align-items: center;
 }
