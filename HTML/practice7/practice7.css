@@ -1,34 +1,66 @@
-.field {
-    position: fixed;
-    background-color: rgb(230, 225, 219);
-    margin-top: 20px;
-    align-content: center;
-    justify-content: center;
-    margin-left: 450px;
-   
-  }
-  label {
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
-    text-align: right;
-    margin: 5px;
-  }
-  h3 {
-    text-align: right;
-    width: 45%;
-  }
-  .api {
-    align-content: center;
-    margin: 5px;
-    margin-left: 50%;
-    width: 10%;
-  }
-  .api2{
-    width: 5%;
-  }
-  button{
-    width: 60px;
-    margin: 3px;
-   display: flex;
-  }
+* {
+  margin: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  padding: 10px;
+  background-color: #eeeeee;
+}
+fieldset {
+  border: none;
+  padding: 10px 0;
+}
+legend {
+  font-weight: bold;
+}
+input,
+select {
+  width: 90%;
+}
+td {
+  text-align: end;
+  padding: 10px;
+}
+td:nth-child(1) {
+  width: 150px;
+}
+td:nth-child(2) {
+  text-align: start;
+  width: 300px;
+}
+.btn {
+  padding: 5px 30px;
+  width: max-content;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+input[type="tel"] {
+  width: 60%;
+}
+.api{
+  border-radius: 100%;
+  background-color: rgb(78, 78, 255);
+  color: white;
+  font-size: 10px;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  font-size: 14px;
+}
+#day,
+#year {
+  width: 30%;
+  margin-left: 10px;
+}
