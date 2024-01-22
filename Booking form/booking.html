@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Booking Form</title>
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="booking-form">
+        <h2>Travel Booking Form</h2>
+        <form id="booking">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+
+          <label for="destination">Destination:</label>
+          <input type="text" name="destination" id="destination" />
+
+          <label for="departure-date">Departure Date:</label>
+          <input type="date" name="departuredate" id="departure-date" />
+
+          <label for="return-date">Return Date:</label>
+          <input type="date" name="returndate" id="return-date" />
+
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+    <!-- core library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script> 
+    <script src="booking.js"></script>
+
+  </body>
+</html>
