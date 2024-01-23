@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Medical History Form</title>
+    <link rel="stylesheet" href="patient.css">
+</head>
+
+<body>
+    <form class="form" id="patientMedHistoryForm" method="post" action="#">
+        <div>
+            <h1>General Patient Informaiton</h1>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <div>
+                <label for="gender">Patient Gender<span class="red-star">&nbsp;*</span></label>
+
+            </div>
+            <select id="gender" name="gender" required>
+              <option disabled selected >Please select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <label for="txtFrstName">Patient Name<span class="red-star">&nbsp;*</span></label>
+            </div>
+            <input type="text" id="txtFrstName" name="txtFrstName" placeholder="First Name" required>
+            <input type="text" id="txtLstName" name="txtLstName" placeholder="Last Name" required>
+        </div>
+        <div class="dob">
+            <div>Patient Birth Date<span class="red-star">&nbsp;*</span></div>
+
+            <div>
+              <select name="month" id="month" style="width: 30%" required>
+                <option disabled selected >Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Augest">August</option>
+                <option value="September">September</option>
+                <option value="January">October</option>
+                <option value="January">November</option>
+                <option value="January">December</option>
+              </select>
+              <select name="bDay" id="Day" style="width: 30%" required>
+                <option disabled selected>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+              </select>
+              <select name="byear" id="year" required>
+                  <option disabled selected>Year</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+            
+              </select>
+
+            </div>
+        </div>
+        <div>
+            <label for="numPatientHeight">Patient Height (cm's)<span class="red-star">&nbsp;*</span></label>
+
+        <div>
+            <input type="number" id="numPatientHeight" name="numPatientHeight" placeholder="ex: 176" required>
+        </div>
+        </div>
+        <div>
+            <label for="numPatientWeight">Patient Weight (kg's)<span class="red-star">&nbsp;*</span></label>
+            <div>
+                <input type="number" id="numPatientWeight" name="numPatientWeight" placeholder="ex: 176" required>
+            </div>
+        </div>
+        <div>
+            <label for="patientEmail">Patient E-Mail<span class="red-star">&nbsp;*</span></label>
+
+            <div>
+                <input type="email" id="patientEmail" name="patientEmail" placeholder="ex: myname@example.com" required>
+            </div>
+        </div>
+        <div>
+            <label for="patientReason">Reason for seeing the doctor:<span class="red-star">&nbsp;*</span></label>
+
+            <div>
+                <input type="text" id="patientReason" name="patientReason" required>
+            </div>
+        </div>
+
+        <br>
+        <div>
+            <div>
+            <h3>Patient Medical History</h3>
+            </div>
+
+        <hr>
+
+        <br>
+            <div>
+                <label for="listDrugAllergies">Please list any drug allergies</label>
+            </div>
+
+            <textarea name="listDrugAllergies" id="listDrugAllergies" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <div>Have you ever had (Please check all that apply)</div>
+
+            <div class="dieses">
+                <input type="checkbox" name="anemia" value="Anemia">Anemia <br>
+                <input type="checkbox" name="athma" value="Asthma">Asthma <br>
+                <input type="checkbox" name="cancer" value="Cancer">Cancer <br>
+                <input type="checkbox" name="diabetes" value="Diabetes">Diabetes <br>
+                <input type="checkbox" name="emotionalDisorder" value="Emotional Disorder">Emotional Disorder <br>
+                <input type="checkbox" name="faintingSpells" value="Fainting Spells">Fainting Spells <br>
+                <input type="checkbox" name="gallstones" value="Gallstones">Gallstones <br>
+                <input type="checkbox" name="heartAttack" value="Heart Attack">Heart Attack
+            </div>
+        </div>
+        <div>
+            <label for="illeness">Other illnesses:</label>
+
+            <div>
+                <input type="text" name="illeness" id="illeness">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label for="operationsAndDates">Please list any Operations and Dates of Each</label>
+            </div>
+
+            <textarea name="operationsAndDates" id="operationsAndDates" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <div>
+                <label for="crntMedication">Please list your Current Medications</label>
+            </div>
+
+            <textarea name="crntMedication" id="crntMedication" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <h3>Healthy & Unhealthy Habits</h3>
+        </div>
+
+        <hr>
+
+        <div>
+            <div>Exercise</div>
+            <input type="radio" name="exercise" value="Never">Never <br>
+            <input type="radio" name="exercise" value="1-2 days">1-2 days <br>
+            <input type="radio" name="exercise" value="3-4 days">3-4 days <br>
+            <input type="radio" name="exercise" value="5+ days">5+ days
+
+            <br>
+
+            <div>Eating following a diet</div>
+            <input type="radio" name="diet" value="loose diet">I have a loose diet <br>
+            <input type="radio" name="diet" value="strict diet">I have a strict diet <br>
+            <input type="radio" name="diet" value="No Plan">I don't have a diet plan
+
+            <br>
+
+            <div>Alcohol Consumption</div>
+            <input type="radio" name="alcohol" value="don't drink">I don't drink <br>
+            <input type="radio" name="alcohol" value="1-2 cups/day">1-2 cups/day <br>
+            <input type="radio" name="alcohol" value="3-4 cups/day">3-4 cups/day <br>
+            <input type="radio" name="alcohol" value="5+ cups/day">5+ cups/day
+
+            <br>
+
+            <div>Caffeine Consumption</div>
+            <input type="radio" name="caffeine" value="don't use caffeine">I don't use caffeine <br>
+            <input type="radio" name="caffeine" value="1-2 cups/day">1-2 cups/day <br>
+            <input type="radio" name="caffeine" value="3-4 cups/day">3-4 cups/day <br>
+            <input type="radio" name="caffeine" value="5+ cups/day">5+ cups/day
+
+            <br>
+
+            <div>Do you smoke?</div>
+            <input type="radio" name="smoke" value="No">No <br>
+            <input type="radio" name="smoke" value="0-1 pack/day">0-1 pack/day <br>
+            <input type="radio" name="smoke" value="1-2 pack/day">1-2 pack/day <br>
+            <input type="radio" name="smoke" value="2+ pack/day">2+ pack/day
+        </div>
+
+        <br>
+
+        <div>
+            <div>Include other comments regarding your Medical History</div>
+            <div><textarea name="comments" id="comments" cols="30" rows="10"></textarea></div>
+        </div>
+
+        <hr>
+
+        <div><button type="submit">Submit</button> <br></div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <script src="patient.js"></script>
+</body>
+
+</html>
