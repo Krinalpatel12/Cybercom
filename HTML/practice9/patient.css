@@ -104,3 +104,8 @@ form input[type="radio"] {
     zoom: 1.4;
     vertical-align: -2px;
 }
+.error{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}

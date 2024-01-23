@@ -81,20 +81,6 @@ $().ready(function () {
             agree: "Please accept our policy"
         },
 
-        // messages with red color
-        errorPlacement: function (error, element) {
-            error.css({ "color": "red" });
-            error.insertAfter(element);
-        },
-
-        // Highlight and unhighlight fields with red border on error
-        highlight: function (element, errorClass, validClass) {
-            $(element).css({ "border": "1px solid red" });
-        },
-        unhighlight: function (element, errorClass, validClass) {
-            $(element).css({ "border": "1px solid #ccc" });
-        },
-
         // Form submission handler
         submitHandler: function (form) {
             alert("Your details have been added successfully");
@@ -102,11 +88,6 @@ $().ready(function () {
             // Now, submit the form
             form.submit();
         },
-        invalidHandler: function (event, validator) {
-            // Display an alert with specific error messages when the form is not valid
-            var errors = validator.numberOfInvalids();
-            var message = errors === 1 ? 'You missed 1 field. It has been highlighted below' : 'You missed ' + errors + ' fields. They have been highlighted below';
-            alert(message);
-        }
+        
     });
 });
