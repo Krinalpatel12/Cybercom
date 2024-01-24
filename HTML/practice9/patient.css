@@ -41,13 +41,6 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 div select {
     width: 30%;
     padding: 8px;
