@@ -1,0 +1,58 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    background-image: url('bus.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.person1{
+    background-color: rgba(126, 222, 228, 0.7);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 50%;
+    margin: 0 auto;
+}
+.person1 h2{
+    text-align: center;
+}
+.person1 form{
+    display: flex;
+    flex-direction: column;
+}
+.person1 input{
+    padding: 10px;
+    border: 3px solid #f1a7a7;
+    border-radius: 5px;
+}
+.person1 button{
+    margin-top:10px;
+    padding: 10px;
+    background-color: #1d3892;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.person1 button:hover{
+    background-color: #02decc;
+    color: red;
+    transition: 5sec;
+    
+}
+.error{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+    color: rgb(134, 45, 45);
+    font-style: italic;
+}

@@ -1,0 +1,16 @@
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border-radius: 5px;
+}
+body{
+    text-align: center;
+    margin-top: 200px;
+}
+p{
+    font-family: cursive;
+    font-weight: bol;
+}

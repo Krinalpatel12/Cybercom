@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="p4.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="person1">
+        <h2>Person Form</h2>
+        <form id="person">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- core library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script> 
+    <script src="p4.js"></script>
+
+  </body>
+</html>
