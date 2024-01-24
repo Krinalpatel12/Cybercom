@@ -1,11 +1,9 @@
-$().ready(function () {
 
-    $.validator.addMethod("gender", function (value, element) {
-        return value !== "select";
-    }, "Please select a gender.");
 
-    $("#patientMedHistoryForm").validate({
-
+    $(function(){
+        var $bookingform = $("#patientMedHistoryForm");
+        if($bookingform.length){
+            $bookingform.validate({
         rules: {
             gender: {
                 required: true,
@@ -90,4 +88,5 @@ $().ready(function () {
         },
         
     });
+}
 });
